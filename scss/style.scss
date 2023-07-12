@@ -22,8 +22,14 @@ a {
 
 //---------container------------
 
-.container {
+.big-container {
     max-width: 1220px;
+    margin: 0 auto;
+    padding: 0 10px;
+}
+
+.container {
+    max-width: 920px;
     margin: 0 auto;
     padding: 0 10px;
 }
@@ -117,5 +123,112 @@ body {
         padding: 10px 0;
     }
 }
-// ---------------------------
+
+
+// ---------------info---------------
+
+.info {
+    margin-bottom: 100px;
+
+    &__part {
+        padding-top: 100px;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    &__part-first {
+        display: block;
+    }
+
+    &__part-second {
+        .info__text {
+            max-width: 352px;
+        }
+    }
+
+    &__part-third {
+        padding-top: 66px;
+
+        .info__text {
+            max-width: 377px;
+        }
+    }
+
+    &__title {
+        text-transform: uppercase;
+        margin-bottom: 30px;
+        font-size: 32px;
+        font-weight: 300;
+    }
+
+    &__part-textbox {
+        display: flex;
+        justify-content: space-between;
+        gap: 0 20px;
+    }
+
+    &__text {
+        flex-basis: 440px;
+        margin-bottom: 30px;
+    }
+
+    &__part-img {
+        object-fit: cover;
+    }
+
+    &__content {
+        flex-basis: 415px;
+    }
+
+    &__table {
+        flex-basis: 450px;
+        border-bottom: 1px solid #040404;
+        position: relative;
+        top: 20px;
+
+        &::before {
+            content: '';
+            border-top: 1px solid #000;
+            position: absolute;
+            width: 100%;
+            top: -20px;
+        }
+
+        td {
+            padding-bottom: 20px;
+        }
+    }
+}
+
+
+.track {
+    background-image: url(../images/track-bg.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    &__inner {
+        display: flex;
+        flex-direction: column;
+        min-height: 100vh;
+    }
+
+    &__title {
+        padding-top: 50px;
+        padding-bottom: 30px;
+        font-size: 32px;
+        font-weight: 300;
+    }
+
+    &__text {
+        max-width: 435px;
+    }
+
+    &__img {
+        margin: auto auto 90px auto;
+    }
+} 
+
+
+
 
