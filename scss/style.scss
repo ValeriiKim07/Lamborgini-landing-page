@@ -234,6 +234,7 @@ body {
 //------------------------evo-----------------------
 .evo {
     font-size: 14px;
+    margin-bottom: 100px;
 
     &__descr-list {
         display: flex;
@@ -366,7 +367,99 @@ body {
     }
 }
 
+// -----------blog--------------
+.blog {
+    margin-bottom: 100px;
 
+    &__title {
+        font-size: 32px;
+        font-weight: 300;
+        text-transform: uppercase;
+        margin-bottom: 30px;
+    }
 
+    &__slider {
+        position: relative;
+        padding-top: 50px;
+        margin-bottom: 100px;
+    }
+
+    &__item {
+    }
+
+    &__item-img {
+        margin-bottom: 20px;
+    }
+
+    &__item-title {
+        font-size: 20px;
+        font-weight: 400;
+        text-transform: uppercase;
+        margin-bottom: 10px;
+        min-height: 46px;
+    }
+
+    &__item-text {
+        margin-bottom: 10px;
+    }
+
+    &__item-link {
+        color: #363636;
+        font-size: 12px;
+    }
+
+    &__button {
+        position: absolute;
+        top: 0;
+        left: 50%;
+        cursor: pointer;
+    }
+
+		&__quote {
+            display: flex;
+            justify-content: space-between;
+            gap: 0 20px;
+		}
+
+		&__quote-box {
+            flex-basis: 434px;
+		}
+
+		&__quote-img {
+		}
+
+}
+.swiper {
+}
+.swiper-wrapper {
+}
+.swiper-slide {
+}
+.swiper-button-left {
+    transform: translate(-41px);
+}
+.swiper-button-right {
+    transform: translate(8px);
+}
+
+.blockquote {
+    margin-bottom: 30px;
+
+    &__name {
+        font-weight: 700;
+        margin-bottom: 10px;
+
+        span {
+            display: block;
+            font-size: 12px;
+            color: #9F6B08;
+            margin-bottom: 3px;
+        }
+    }
+
+    &__text {
+        font-style: italic;
+    }
+}
 
 
