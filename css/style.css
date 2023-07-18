@@ -56,6 +56,9 @@ body {
   gap: 0 40px;
   padding-top: 25px;
 }
+.header .menu-mobile, .header .menu-btn {
+  display: none;
+}
 .header .menu-left {
   padding-left: 25px;
 }
@@ -438,4 +441,75 @@ body {
   display: flex;
   gap: 0 20px;
   align-items: center;
+}
+@media (max-width: 1100px) {
+  .header .menu-list {
+    display: none;
+  }
+  .header .menu-mobile {
+    display: flex;
+    gap: 0 20px;
+  }
+  .header .logo-img {
+    width: 50px;
+  }
+  .header .nav {
+    align-items: center;
+  }
+  .promo {
+    background-position: left center;
+  }
+  .promo .title {
+    font-size: 64px;
+  }
+  .promo .subtitle {
+    font-size: 42px;
+  }
+  .promo .subtitle span {
+    font-size: 32px;
+  }
+}
+@media (max-width: 820px) {
+  .header .menu-btn {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 45px;
+    height: 30px;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    z-index: 10;
+  }
+  .header .menu-btn span {
+    height: 3px;
+    width: 100%;
+    background-color: #fff;
+  }
+  .header .menu-mobile:not(._active) {
+    display: none;
+  }
+  .header .menu-mobile._active {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #040404;
+    height: 100vh;
+    z-index: 5;
+    text-align: center;
+    padding-top: 140px;
+  }
+  .header .menu-link {
+    color: #fff;
+    display: block;
+    padding: 20px 0;
+    font-size: 3vh;
+  }
+  .header .logo {
+    z-index: 10;
+  }
 }
